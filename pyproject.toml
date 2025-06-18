@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-gsuite-token"
+authors = [
+  { name="Chris Mutel", email="cmutel@gmail.com" },
+]
+maintainers = [
+  { name="Chris Mutel", email="cmutel@gmail.com" },
+]
+description = "Simple Django app for sending emails via a token file on GSuite"
+readme = "README.md"
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Framework :: Django",
+    "Framework :: Django :: 5.0",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content"
+]
+requires-python = ">=3.10"
+dependencies = [
+    "django>=5.0",
+    "google-api-python-client",
+    "google-auth-httplib2",
+    "google-auth-oauthlib",
+]
+
+[project.urls]
+source = "https://github.com/Depart-de-Sentier/django-gsuite-token"
+homepage = "https://github.com/Depart-de-Sentier/django-gsuite-token"
+tracker = "https://github.com/Depart-de-Sentier/django-gsuite-token/issues"
